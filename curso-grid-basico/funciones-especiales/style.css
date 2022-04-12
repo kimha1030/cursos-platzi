@@ -1,0 +1,17 @@
+:root {
+  --first_row: rgb(223, 204, 210);
+  --second_row: rgb(221, 160, 180);
+  --third_row: rgb(219, 136, 164);
+}
+
+.contenedor {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px);
+  grid-template-rows: repeat(3, auto);
+  background-color: beige;
+}
+
+.item {
+  border: 5px solid gray;
+}

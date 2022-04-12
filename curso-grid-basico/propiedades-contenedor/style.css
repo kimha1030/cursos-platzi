@@ -1,0 +1,45 @@
+:root {
+  --first_row: rgb(223, 204, 210);
+  --second_row: rgb(221, 160, 180);
+  --third_row: rgb(219, 136, 164);
+}
+
+.contenedor {
+  display: grid;
+  width: 400px;
+  height: 500px;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.item {
+  display: grid;
+  justify-content: end;
+  align-content: flex-end;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3rem;
+}
+
+.item:nth-child(1),
+.item:nth-child(4) {
+  background-color: var(--first_row);
+}
+
+.item:nth-child(2),
+.item:nth-child(5) {
+  background-color: var(--second_row);
+}
+
+.item:nth-child(3),
+.item:nth-child(6) {
+  background-color: var(--third_row);
+}
+
+.item span {
+  background-color: palevioletred;
+  width: 40px;
+  text-align: center;
+  color: white;
+}

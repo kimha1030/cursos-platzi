@@ -1,0 +1,47 @@
+:root {
+  --first_row: rgb(223, 204, 210);
+  --second_row: rgb(221, 160, 180);
+  --third_row: rgb(215, 119, 151);
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 90vw;
+  height: 90vh;
+}
+
+.contenedor {
+  border: 5px spñid gray;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-template-areas:
+    "h h h"
+    s m m;
+}
+
+.item {
+  font-size: 4rem;
+  display: grid;
+  place-content: center;
+}
+
+.item-1 {
+  border: 1px solid black;
+  background-color: rgb(200, 247, 247);
+  grid-area: h;
+}
+
+.item-2 {
+  border: 1px solid black;
+  background-color: hotpink;
+  grid-area: s;
+}
+
+.item-3 {
+  border: 1px solid black;
+  background-color: lemonchiffon;
+  grid-area: m;
+}

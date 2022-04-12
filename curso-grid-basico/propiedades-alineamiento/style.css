@@ -1,0 +1,34 @@
+:root {
+  --first_row: rgb(223, 204, 210);
+  --second_row: rgb(221, 160, 180);
+  --third_row: rgb(215, 119, 151);
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 90vw;
+  height: 90vh;
+}
+
+.contenedor {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--third_row);
+}
+
+.item {
+  background-color: var(--first_row);
+  display: grid;
+  place-items: end;
+}
+
+span {
+  background-color: var(--second_row);
+  width: 50px;
+  height: 100px;
+}
