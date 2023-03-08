@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto1</title>
+  </head>
+  <body>
+    <div>
+      <ul id="todo"></ul>
+    </div>
+    <script>
+      let todoList = [
+        { title: "Estudiar", time: "2h", completed: true },
+        { title: "Leer", time: "1h", completed: true },
+        { title: "Viajar", time: "4h", completed: false },
+        { title: "Comprar", time: "1h", completed: false },
+      ];
+
+      let container = document.getElementById("todo");
+      todoList.forEach((item) => {
+        container.innerHTML +=
+          "<li>" +
+          `<input type='checkbox' name='itemTodo' value='complete' ${
+            item.completed ? "checked" : ""
+          }/>
+          Titulo: ${item.title} - Duración: ${item.time}
+      </li>`;
+      });
+    </script>
+  </body>
+</html>

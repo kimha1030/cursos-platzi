@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul id="list-products"></ul>
+    </div>
+    <script>
+      let productos = [
+        { title: "Manzana", price: 12 },
+        { title: "Pera", price: 23 },
+        { title: "Banano", price: 34 },
+        { title: "Kiwi", price: 56 },
+      ];
+
+      let container = document.getElementById("list-products");
+
+      productos.forEach((item) => {
+        container.innerHTML += `<li>${item.title} - ${item.price}</li>`;
+      });
+    </script>
+  </body>
+</html>
