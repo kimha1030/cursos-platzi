@@ -1,15 +1,14 @@
-/*
+/* 
 Dia 1:
-La función calculateTip recibirá dos parámetros, billAmount que representa 
-el costo total de lo que se haya consumido y tipPercentage que representa 
-el porcentaje de propina a dejar. Ambos valores serán de tipo Number y 
-siempre serán positivos, incluyendo el 0. La función deberá devolver el valor 
-de la propina como un número.
-*/
+En este desafío encontrarás una función llamada solution que recibe un parámetro 
+llamado valor. Debes encontrar el tipo de dato del parámetro valor y 
+retornarlo desde la función solution.
+ */
 
-function calculateTip(billAmount, tipPercentage) {
-  return billAmount * (tipPercentage / 100);
+function solution(valor) {
+  return typeof valor;
 }
 
-console.log(calculateTip(100, 10));
-console.log(calculateTip(1524.33, 25));
+console.log(solution(1));
+console.log(solution("Dieguillo"));
+console.log(solution(true));
